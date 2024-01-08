@@ -3,6 +3,18 @@
     <title>
       Tears of Themis Official Website - Romance x Detective x Adventure
     </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
     <meta
       data-n-head="ssr"
       charset="utf-8"
@@ -15,49 +27,12 @@
     <meta
       data-n-head="ssr"
       http-equiv="X-UA-Compatible"
-      content="IE=edge,,chrome=1"
+      content="IE=edge,chrome=1"
     />
     <meta
       data-n-head="ssr"
       name="viewport"
       content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
-    />
-    <meta
-      data-n-head="ssr"
-      data-hid="description"
-      name="description"
-      content="In Tears of Themis, a detective adventure of love and wits, you are a new attorney at law on a journey to solve unusual cases together with your destined lover.
-As a great conspiracy begins to unfold, the line between good and evil blurs. Which way will your scales of justice tip?"
-    />
-    <meta
-      data-n-head="ssr"
-      data-hid="Keywords"
-      name="Keywords"
-      content="romance, love sim, otome, simulation, visual novel, anime, Tears of Themis, miHoYo, Artem Wing, Luke Pearce, Vyn Richter, Marius von Hagen, detective, riddle,  puzzle, court, attorney, lawyer, law, justice, mystery,hoyoverse"
-    />
-    <meta
-      data-n-head="ssr"
-      data-hid="og:title"
-      property="og:title"
-      content="Tears of Themis Official Website - Romance x Detective x Adventure"
-    />
-    <meta
-      data-n-head="ssr"
-      data-hid="twitter:card"
-      name="twitter:card"
-      content="https://webstatic.hoyoverse.com/upload/event/2021/04/17/fbc481b5ca23a0fb6ddb87a31b497ef4_6122606123017111972.jpg"
-    />
-    <meta
-      data-n-head="ssr"
-      data-hid="og:description"
-      property="og:description"
-      content="As the line between good and evil blurs, which way will your scales of justice tip?"
-    />
-    <meta
-      data-n-head="ssr"
-      data-hid="og:image"
-      property="og:image"
-      content="https://webstatic.hoyoverse.com/upload/event/2021/04/17/fbc481b5ca23a0fb6ddb87a31b497ef4_6122606123017111972.jpg"
     />
     <link
       data-n-head="ssr"
@@ -65,53 +40,6 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
       type="image/x-icon"
       href="/favicon.ico"
     />
-    <script
-      type="text/javascript"
-      async=""
-      src="https://www.google-analytics.com/analytics.js"
-    ></script>
-    <script
-      type="text/javascript"
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=G-XWEDFPX1KS&amp;l=dataLayer&amp;cx=c"
-    ></script>
-    <script
-      type="text/javascript"
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=UA-140530396-5&amp;l=dataLayer&amp;cx=c"
-    ></script>
-    <script
-      data-n-head="ssr"
-      type="text/javascript"
-      data-body="false"
-    >
-      if (location.href.indexOf("https://tot.mihoyo.com") > -1) {
-        location.href = location.href.replace(
-          "https://tot.mihoyo.com",
-          "https://tot.hoyoverse.com"
-        );
-      }
-    </script>
-    <script
-      data-n-head="ssr"
-      type="text/javascript"
-      data-body="false"
-    >
-      NodeList.prototype.forEach = Array.prototype.forEach;
-    </script>
-    <script
-      data-n-head="ssr"
-      src="https://webstatic.hoyoverse.com/dora/base/jquery-1.11.1.js"
-    ></script>
-    <script
-      data-n-head="ssr"
-      src="https://webstatic.hoyoverse.com/dora/biz/hoyoverse-footer/v2/footer.js"
-      async=""
-    ></script>
-    <script
-      data-n-head="ssr"
-      src="https://webstatic.hoyoverse.com/dora/biz/hoyoverse-account-sdk/main.js"
-    ></script>
     <style type="text/css">
       .hyv-login-platform__loading {
         position: fixed;
@@ -439,129 +367,6 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
       }
       .mhy-account-flow input::-webkit-input-safebox-button {
         display: none;
-      }
-
-      .header {
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 9;
-        width: 100%;
-        background: #fff;
-        font-size: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 65px;
-        min-width: 1280px;
-      }
-      .header__navercafe,
-      .header__twitter,
-      .header__facebook,
-      .header__youtube {
-        display: block;
-        width: 30px;
-        height: 30px;
-        background-size: 100% 100%;
-        margin-right: 30px;
-        position: relative;
-        flex-shrink: 0;
-      }
-      .header__navercafe img,
-      .header__twitter img,
-      .header__facebook img,
-      .header__youtube img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 0.5s;
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-      .header__navercafe .default,
-      .header__twitter .default,
-      .header__facebook .default,
-      .header__youtube .default {
-        opacity: 1;
-      }
-      .header__navercafe .active,
-      .header__twitter .active,
-      .header__facebook .active,
-      .header__youtube .active {
-        opacity: 0;
-      }
-      .header__navercafe:hover .default,
-      .header__twitter:hover .default,
-      .header__facebook:hover .default,
-      .header__youtube:hover .default {
-        opacity: 0;
-      }
-      .header__navercafe:hover .active,
-      .header__twitter:hover .active,
-      .header__facebook:hover .active,
-      .header__youtube:hover .active {
-        opacity: 1;
-      }
-      .header__space {
-        flex-grow: 2;
-      }
-      .header__space--half {
-        flex-shrink: 0;
-        min-width: 82px;
-        flex-grow: 1;
-      }
-      .header__hover-btn {
-        position: fixed;
-        top: 80px;
-        right: 40px;
-        height: 83px;
-      }
-      .header__hover-btn img {
-        max-height: 83px;
-      }
-      .header__sign-up {
-        color: #fff;
-        background: #242c44;
-        width: 133px;
-        text-align: center;
-        line-height: 31px;
-        border-radius: 3px;
-        white-space: nowrap;
-        flex-shrink: 0;
-      }
-      .header__sign-up:hover {
-        background: #768dd4;
-      }
-      .header__nav-wrapper {
-        flex-grow: 4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 40px;
-        min-width: 0;
-      }
-      .header__nav {
-        position: relative;
-        display: flex;
-        height: 100%;
-        flex-direction: row;
-        white-space: nowrap;
-        min-width: 0;
-        font-size: 18px;
-      }
-      .header__nav a {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        line-height: 56px;
-        color: #000;
-        transition: color 0.2s linear;
-        position: relative;
-        min-width: 0;
-        text-decoration: none;
       }
       .header__nav a.hidden {
         display: none;
@@ -961,92 +766,6 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         animation-duration: 0.35s;
       }
 
-      .header__login[data-v-2f52362a] {
-        padding-left: 10px;
-      }
-      .header__login .login__btn[data-v-2f52362a] {
-        width: 24px;
-        height: 30px;
-        text-align: right;
-        background-image: url(/_nuxt/img/36a3149.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 24px 26px;
-        line-height: 30px;
-        cursor: pointer;
-      }
-      .header__login .login__btn[data-v-2f52362a]:hover {
-        text-decoration: underline;
-      }
-      .header__login .login__account[data-v-2f52362a] {
-        position: relative;
-        padding-left: 30px;
-        height: 100%;
-        line-height: 56px;
-        background-image: url(/_nuxt/img/36a3149.png);
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 24px 24px;
-      }
-      .header__login .login__drop-down[data-v-2f52362a] {
-        display: none;
-        position: absolute;
-        top: 64px;
-        right: 60%;
-        padding: 10px;
-        min-width: 180px;
-        height: 92px;
-        line-height: 1;
-        color: #fff;
-        background: #5770de;
-        border-radius: 6px;
-        white-space: nowrap;
-      }
-      .header__login .login__drop-down > div[data-v-2f52362a] {
-        padding: 0 0.7rem;
-        line-height: 32px;
-        font-size: 17px;
-        text-align: center;
-        color: #fff;
-        background-color: #fff;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .header__login .login__drop-down > div[data-v-2f52362a]:last-child {
-        margin-top: 10px;
-        background-color: #242c44;
-      }
-      .header__login .login__drop-down > div a[data-v-2f52362a] {
-        color: #242c44;
-        text-decoration: none;
-      }
-      .header__login .login__drop-down[data-v-2f52362a]::before {
-        content: "";
-        border-width: 0 10px 12px 10px;
-        border-color: transparent;
-        border-bottom-color: #5770de;
-        border-style: solid;
-        display: block;
-        width: 0;
-        height: 0;
-        position: absolute;
-        right: 32px;
-        top: -12px;
-      }
-      .header__login .login__drop-down[data-v-2f52362a]::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 12px;
-        position: absolute;
-        right: 0;
-        top: -12px;
-      }
-      .header__login:hover .login__drop-down[data-v-2f52362a] {
-        display: block;
-        z-index: 9;
-      }
-
       .index[data-v-6dd5e992] {
         background: #fff;
         visibility: inherit;
@@ -1109,7 +828,8 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         height: 52px;
         line-height: 52px;
         text-align: right;
-        background: transparent url(/_nuxt/img/4a50299.png) no-repeat 0 16px/22px
+        background: transparent
+          url(https://tot.hoyoverse.com/_nuxt/img/4a50299.png) no-repeat 0 16px/22px
           22px;
       }
       .footer__language--title[data-v-19a50ce1] {
@@ -1220,7 +940,8 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         width: 100%;
         height: 100%;
         z-index: 99;
-        background: #fff url(/_nuxt/img/af6b45d.png) no-repeat center center;
+        background: #fff url(https://tot.hoyoverse.com/_nuxt/img/af6b45d.png)
+          no-repeat center center;
         background-size: cover;
       }
       .error__content {
@@ -1273,7 +994,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         width: 100%;
         height: 0;
         padding-bottom: 100%;
-        background-image: url(/_nuxt/img/c96459e.png);
+        background-image: url(https://tot.hoyoverse.com/_nuxt/img/c96459e.png);
         background-size: 3100% 100%;
         background-repeat: no-repeat;
         display: none;
@@ -1299,7 +1020,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
           width: 100%;
           height: 0;
           padding-bottom: 100%;
-          background-image: url(/_nuxt/img/c96459e.png);
+          background-image: url(https://tot.hoyoverse.com/_nuxt/img/c96459e.png);
           background-size: 3100% 100%;
         }
         3.03% {
@@ -1398,7 +1119,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
           width: 100%;
           height: 0;
           padding-bottom: 100%;
-          background-image: url(/_nuxt/img/c96459e.png);
+          background-image: url(https://tot.hoyoverse.com/_nuxt/img/c96459e.png);
           background-size: 3100% 100%;
         }
         3.03% {
@@ -2544,7 +2265,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
     </style>
     <script
       charset="utf-8"
-      src="/_nuxt/e648455fd221f4d0b7a0.js"
+      src="https://tot.hoyoverse.com/_nuxt/e648455fd221f4d0b7a0.js"
     ></script>
     <style type="text/css">
       .kv[data-v-3fa9f477] {
@@ -2671,7 +2392,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         width: 80px;
         height: 80px;
         position: absolute;
-        background-image: url(/_nuxt/img/91580fb.png);
+        background-image: url(https://tot.hoyoverse.com/_nuxt/img/91580fb.png);
         background-size: contain;
         background-position: center center;
         transform: translate(50%, -50%);
@@ -3166,60 +2887,23 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         display: block;
         border-radius: 5px;
       }
-      .kv__store-btn[data-v-3fa9f477] {
-        float: left;
-        display: flex;
-        vertical-align: top;
-        transform: translateY(10px);
-      }
-      .kv__store-btn.row[data-v-3fa9f477] {
-        flex-direction: row;
-      }
-      .kv__store-btn.row a[data-v-3fa9f477] {
-        margin-right: 20px;
-      }
-      .kv__store-btn.row a img[data-v-3fa9f477] {
-        height: 58px;
-      }
-      .kv__store-btn.column[data-v-3fa9f477] {
-        flex-direction: column;
-      }
-      .kv__store-btn.column a[data-v-3fa9f477] {
-        margin-top: 11px;
-      }
-      .kv__store-btn.column a img[data-v-3fa9f477] {
-        width: 180px;
-      }
-      .kv__store-btn a[data-v-3fa9f477] {
-        display: block;
-        transition: all 0.2s;
-      }
-      .kv__store-btn a[data-v-3fa9f477]:last-child {
-        margin-right: 0;
-      }
-      .kv__store-btn a[data-v-3fa9f477]:hover {
-        transform: scale3d(1.1, 1.1, 1);
-      }
-      .kv__store-btn a img[data-v-3fa9f477] {
-        display: block;
-        pointer-events: none;
-      }
+     
       .kv__next[data-v-3fa9f477] {
-        position: absolute;
+        /* position: absolute;
         height: 50px;
         width: 70px;
         left: 50%;
         margin-left: -35px;
         bottom: 20px;
         z-index: 5;
-        cursor: pointer;
+        cursor: pointer; */
       }
       .kv__next .next__arrow[data-v-3fa9f477] {
         position: absolute;
         left: 50%;
         opacity: 0;
-        -webkit-animation-name: point-data-v-3fa9f477;
-        animation-name: point-data-v-3fa9f477;
+        -webkit-animation-name: bounce-effect;
+        animation-name: bounce-effect;
         -webkit-animation-duration: 3s;
         animation-duration: 3s;
         -webkit-animation-iteration-count: infinite;
@@ -3262,7 +2946,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         -webkit-animation-delay: 0.4s;
         animation-delay: 0.4s;
       }
-      @-webkit-keyframes point-data-v-3fa9f477 {
+      @-webkit-keyframes bounce-effect {
         0% {
           opacity: 0.2;
           transform: translateY(0);
@@ -3280,7 +2964,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
           opacity: 0.2;
         }
       }
-      @keyframes point-data-v-3fa9f477 {
+      @keyframes bounce-effect {
         0% {
           opacity: 0.2;
           transform: translateY(0);
@@ -3309,7 +2993,8 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
       .information__screen[data-v-2b1c7b62] {
         padding-top: 85px;
         height: 100%;
-        background: url(/_nuxt/img/119293b.png) no-repeat left top/cover;
+        background: url("https://tot.hoyoverse.com/_nuxt/img/119293b.png")
+          no-repeat left top/cover;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3452,7 +3137,8 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         display: block;
         width: 72px;
         height: 36px;
-        background: url(/_nuxt/img/03a527c.png) center center;
+        background: url(https://tot.hoyoverse.com/_nuxt/img/03a527c.png) center
+          center;
         background-size: 100% 100%;
         position: absolute;
         right: 34px;
@@ -3523,7 +3209,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         height: 100%;
         background-size: cover;
         background-position: left top;
-        background-image: url(/_nuxt/img/82d4778.png);
+        background-image: url("https://tot.hoyoverse.com/_nuxt/img/82d4778.png");
       }
       .character__title[data-v-770828bb] {
         position: absolute;
@@ -3786,7 +3472,8 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         display: block;
         width: 151px;
         height: 115px;
-        background: url(/_nuxt/img/0a43e41.png) no-repeat;
+        background: url(https://tot.hoyoverse.com/_nuxt/img/0a43e41.png)
+          no-repeat;
         background-position: center center;
         background-size: contain;
         position: absolute;
@@ -3817,7 +3504,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
       }
     </style>
     <style type="text/css">
-      .container > .character {
+      .main-container > .character {
         height: 100vh;
       }
     </style>
@@ -3833,7 +3520,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         height: 100%;
         background-size: cover;
         background-position: left top;
-        background-image: url(/_nuxt/img/6d61699.png);
+        background-image: url("https://tot.hoyoverse.com/_nuxt/img/6d61699.png");
       }
       .system__title[data-v-89fac28c] {
         position: absolute;
@@ -3910,7 +3597,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
       }
     </style>
     <style type="text/css">
-      .container > .system {
+      .main-container > .system {
         height: 100vh;
       }
     </style>
@@ -3950,7 +3637,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         top: 50%;
         height: 633px;
         width: 928px;
-        background: url(/_nuxt/img/7fb7678.png);
+        background: url("https://tot.hoyoverse.com/_nuxt/img/7fb7678.png");
         background-size: 100% 100%;
         display: table-cell;
         vertical-align: middle;
@@ -3970,7 +3657,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
       }
     </style>
     <style type="text/css">
-      .container > .story {
+      .main-container > .story {
         height: 100vh;
       }
     </style>
@@ -3981,7 +3668,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         left: 0;
         width: 100%;
         height: 100vh;
-        background-image: url(/_nuxt/img/81ac3ad.png);
+        background-image: url(https://tot.hoyoverse.com/_nuxt/img/81ac3ad.png);
         background-size: cover;
         background-position: center bottom;
         z-index: 99;
@@ -4023,8 +3710,8 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         font-family: "微软雅黑", "Microsoft YaHei", "Neuropolitical", sans-serif !important;
       }
     </style>
-    <script src="https://webstatic.hoyoverse.com/dora/biz/mihoyo-h5log/v1.0/main.js"></script>
-    <script src="https://webstatic.hoyoverse.com/dora/biz/mihoyo-analysis/v2/main.js"></script>
+    <!-- <script src="https://webstatic.hoyoverse.com/dora/biz/mihoyo-h5log/v1.0/main.js"></script>
+    <script src="https://webstatic.hoyoverse.com/dora/biz/mihoyo-analysis/v2/main.js"></script> -->
     <style id="svelte-zqeee">
       .hy-footer-skOevz {
         font-family: sans-serif;
@@ -4682,7 +4369,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
     </style>
     <script
       charset="utf-8"
-      src="/_nuxt/5ea4219cc72f2cce47f3.js"
+      src="https://tot.hoyoverse.com/_nuxt/5ea4219cc72f2cce47f3.js"
     ></script>
     <style type="text/css">
       .information-front-img[data-v-cebec110] {
@@ -4770,7 +4457,8 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         display: block;
         width: 72px;
         height: 36px;
-        background: url(/_nuxt/img/03a527c.png) center center;
+        background: url(https://tot.hoyoverse.com/_nuxt/img/03a527c.png) center
+          center;
         background-size: 100% 100%;
         position: absolute;
         right: 34px;
@@ -4888,7 +4576,9 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
       <!---->
       <div id="__layout">
         <div class="root">
-          <header class="header">
+          <header
+            class="header fixed left-0 top-0 z-[9] w-full bg-white text-[20px] flex flex-row justify-between items-center py-0 px-[65px] min-w-[1280px]"
+          >
             <div
               class="music-control music-control--off"
               data-v-8ee41e3e=""
@@ -4914,19 +4604,23 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                 data-v-8ee41e3e=""
               ></div>
               <audio
-                src="/_nuxt/9216e098e497752df5ea40113ed2947f.mp3"
+                id="main-theme"
+                src="https://tot.hoyoverse.com/_nuxt/9216e098e497752df5ea40113ed2947f.mp3"
                 preload="auto"
                 loop="loop"
-                autoplay="autoplay"
                 data-v-8ee41e3e=""
               ></audio>
             </div>
-            <div class="header__nav-wrapper">
-              <nav class="header__nav">
+            <div
+              class="grow-[4] flex items-center justify-center py-0 px-10 min-w-0"
+            >
+              <nav
+                class="header__nav relative flex h-full flex-row whitespace-nowrap min-w-0 text-[18px]"
+              >
                 <a
                   href="/en-us/"
                   aria-current="page"
-                  class="nuxt-link-exact-active nuxt-link-active"
+                  class="flex items-center h-full leading-[56px] text-black transition-[color] duration-200 ease-linear relative min-w-0 decoration-none"
                   >HOME
                   <div
                     class="underline"
@@ -5011,10 +4705,12 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                     <div
                       class="underline__piece underline__piece--20"
                       data-v-5ad73f08=""
-                    ></div></div></a
-                ><a
+                    ></div>
+                  </div>
+                </a>
+                <a
                   href="/en-us/information/all"
-                  class=""
+                  class="flex items-center h-full leading-[56px] text-black transition-[color] duration-200 ease-linear relative min-w-0 decoration-none"
                   >NEWS
                   <div
                     class="underline"
@@ -5099,10 +4795,12 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                     <div
                       class="underline__piece underline__piece--20"
                       data-v-5ad73f08=""
-                    ></div></div></a
-                ><a
+                    ></div>
+                  </div>
+                </a>
+                <a
                   href="/en-us/character"
-                  class=""
+                  class="flex items-center h-full leading-[56px] text-black transition-[color] duration-200 ease-linear relative min-w-0 decoration-none"
                   >CHARACTERS
                   <div
                     class="underline"
@@ -5187,10 +4885,12 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                     <div
                       class="underline__piece underline__piece--20"
                       data-v-5ad73f08=""
-                    ></div></div></a
-                ><a
+                    ></div>
+                  </div>
+                </a>
+                <a
                   href="/en-us/system"
-                  class=""
+                  class="flex items-center h-full leading-[56px] text-black transition-[color] duration-200 ease-linear relative min-w-0 decoration-none"
                   >MECHANICS
                   <div
                     class="underline"
@@ -5275,10 +4975,12 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                     <div
                       class="underline__piece underline__piece--20"
                       data-v-5ad73f08=""
-                    ></div></div></a
-                ><a
+                    ></div>
+                  </div>
+                </a>
+                <a
                   href="/en-us/story"
-                  class=""
+                  class="flex items-center h-full leading-[56px] text-black transition-[color] duration-200 ease-linear relative min-w-0 decoration-none"
                   >STORY
                   <div
                     class="underline"
@@ -5363,71 +5065,70 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                     <div
                       class="underline__piece underline__piece--20"
                       data-v-5ad73f08=""
-                    ></div></div
-                ></a>
+                    ></div>
+                  </div>
+                </a>
                 <a
                   href="https://tot.hoyoverse.com/gift/"
                   target="_blank"
+                  class="flex items-center h-full leading-[56px] text-black transition-[color] duration-200 ease-linear relative min-w-0 decoration-none"
                   >REDEEM CODE</a
                 >
                 <a
                   href="https://tot.hoyoverse.com/payment"
                   target="_blank"
+                  class="flex items-center h-full leading-[56px] text-black transition-[color] duration-200 ease-linear relative min-w-0 decoration-none"
                   >TOP-UP</a
                 >
                 <div
                   class="header__underline"
-                  style="left: 0px; right: 839px; transition-delay: 0.15s, 0s"
+                  style="left: 0px; right: 893px; transition-delay: 0s, 0.15s"
                 ></div>
               </nav>
             </div>
             <!---->
             <a
-              href="https://twitter.com/TearsofThemisEN"
-              target="_blank"
-              class="header__twitter"
-              ><img
-                src="/_nuxt/img/a9dc307.png"
-                class="default" />
-              <img
-                src="/_nuxt/img/c8526c8.png"
-                class="active"
-            /></a>
-            <a
-              href="https://www.facebook.com/tearsofthemis.glb"
-              target="_blank"
-              class="header__facebook"
-              ><img
-                src="/_nuxt/img/56cdc94.png"
-                class="default" />
-              <img
-                src="/_nuxt/img/e8d9c83.png"
-                class="active"
-            /></a>
-            <a
-              href="https://www.youtube.com/channel/UCsH_thMW9_3rau-K8v4yAxw"
-              target="_blank"
-              class="header__youtube"
-              ><img
-                src="/_nuxt/img/ba7fabd.png"
-                class="default" />
-              <img
-                src="/_nuxt/img/9db616a.png"
-                class="active"
-            /></a>
-            <div
-              class="header__login"
-              data-v-2f52362a=""
+              href="#"
+              class="block w-[30px] h-[30px] bg-[100% 100%] mr-[30px] relative shrink-0"
             >
+              <img
+                src="https://tot.hoyoverse.com/_nuxt/img/a9dc307.png"
+                class="block w-full h-full transition-opacity duration-500 absolute left-0 top-0 opacity-100 hover:opacity-0" />
+              <img
+                src="https://tot.hoyoverse.com/_nuxt/img/c8526c8.png"
+                class="block w-full h-full transition-opacity duration-500 absolute left-0 top-0 opacity-0 hover:opacity-100"
+            /></a>
+            <a
+              href="#"
+              class="block w-[30px] h-[30px] bg-[100% 100%] mr-[30px] relative shrink-0"
+            >
+              <img
+                src="https://tot.hoyoverse.com/_nuxt/img/56cdc94.png"
+                class="block w-full h-full transition-opacity duration-500 absolute left-0 top-0 opacity-100 hover:opacity-0" />
+              <img
+                src="https://tot.hoyoverse.com/_nuxt/img/e8d9c83.png"
+                class="block w-full h-full transition-opacity duration-500 absolute left-0 top-0 opacity-0 hover:opacity-100"
+            /></a>
+            <a
+              href="#"
+              class="block w-[30px] h-[30px] bg-[100% 100%] mr-[30px] relative shrink-0"
+            >
+              <img
+                src="https://tot.hoyoverse.com/_nuxt/img/ba7fabd.png"
+                class="block w-full h-full transition-opacity duration-500 absolute left-0 top-0 opacity-100 hover:opacity-0" />
+              <img
+                src="https://tot.hoyoverse.com/_nuxt/img/9db616a.png"
+                class="block w-full h-full transition-opacity duration-500 absolute left-0 top-0 opacity-0 hover:opacity-100"
+            /></a>
+            <div class="pl-[10px]">
               <div
                 src="~assets/images/header/login-btn.png"
-                class="login__btn"
-                data-v-2f52362a=""
+                class="w-6 h-[30px] text-right bg-[url('https://tot.hoyoverse.com/_nuxt/img/36a3149.png')] bg-no-repeat bg-center bg-[length:24px_26px] leading-[30px] cursor-pointer"
               ></div>
             </div>
             <!---->
           </header>
-          <div class="container">
+          <div class="main-container">
             <div
               class="index index--visible"
               data-v-6dd5e992=""
@@ -5461,7 +5162,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                         class="kv__bg"
                       >
                         <source
-                          src="https://fastcdn.hoyoverse.com/content-v2/nxx/100066/c4df2d75be73c8b2cad5517373079fef_631905342490124038.mp4"
+                          src="./assets/main_video_2.mp4"
                           type="video/mp4"
                         />
                       </video>
@@ -5505,29 +5206,35 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                         </div>
                         <div
                           data-v-3fa9f477=""
-                          class="kv__store-btn row"
+                          class="kv__store-btn row flex float-left flex-row align-start translate-y-[10px]"
                         >
                           <a
                             data-v-3fa9f477=""
-                            href="http://itunes.apple.com/app/id1517957388"
-                            target="_blank"
-                            ><img
+                            href="#"
+                            class="mr-[20px] block transition-all duration-200 hover:scale-110"
+                          >
+                            <img
                               data-v-3fa9f477=""
                               src="https://webstatic.hoyoverse.com/upload/op-public/2021/07/22/3d20345cf29a069bc4a3b67c7df6a4ba_5161103255846288442.png"
-                          /></a>
+                              class="block pointer-events-none"
+                            />
+                          </a>
                           <a
                             data-v-3fa9f477=""
-                            href="https://play.google.com/store/apps/details?id=com.miHoYo.tot.glb"
-                            target="_blank"
-                            ><img
+                            href="#"
+                            class="mr-0 block transition-all duration-200 hover:scale-110"
+                          >
+                            <img
                               data-v-3fa9f477=""
                               src="https://webstatic.hoyoverse.com/upload/op-public/2021/07/22/8bcd9c6d65ac4c05e4bfeade6659ef4c_6361216321947769589.png"
-                          /></a>
+                              class="block pointer-events"
+                            />
+                          </a>
                         </div>
                       </div>
                       <div
                         data-v-3fa9f477=""
-                        class="kv__next"
+                        class="kv__next absolute h-[50px] w-[70px] left-1/2 -ml-[35px] bottom-[20px] z-[5] cursor-pointer"
                       >
                         <div
                           data-v-3fa9f477=""
@@ -5910,7 +5617,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                             >
                               <img
                                 data-v-770828bb=""
-                                src="/_nuxt/img/010f133.png"
+                                src="https://tot.hoyoverse.com/_nuxt/img/010f133.png"
                                 alt="voice"
                               />
                               <ul
@@ -6147,7 +5854,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                             >
                               <img
                                 data-v-770828bb=""
-                                src="/_nuxt/img/010f133.png"
+                                src="https://tot.hoyoverse.com/_nuxt/img/010f133.png"
                                 alt="voice"
                               />
                               <ul
@@ -6384,7 +6091,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                             >
                               <img
                                 data-v-770828bb=""
-                                src="/_nuxt/img/010f133.png"
+                                src="https://tot.hoyoverse.com/_nuxt/img/010f133.png"
                                 alt="voice"
                               />
                               <ul
@@ -6621,7 +6328,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                             >
                               <img
                                 data-v-770828bb=""
-                                src="/_nuxt/img/010f133.png"
+                                src="https://tot.hoyoverse.com/_nuxt/img/010f133.png"
                                 alt="voice"
                               />
                               <ul
@@ -7108,9 +6815,10 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                     >
                       <video
                         data-v-6f6715af=""
-                        src="/_nuxt/videos/f2907d1.mp4"
+                        src="./assets/backstory_video.mp4"
                         loop="loop"
                         muted="muted"
+                        autoplay
                         data-object-fit="cover"
                         data-object-position="left top"
                         class="story__bg"
@@ -7317,15 +7025,7 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
                 <div
                   class="swiper-scrollbar"
                   data-v-6dd5e992=""
-                >
-                  <div
-                    class="swiper-scrollbar-drag"
-                    style="
-                      transform: translate3d(0px, 0px, 0px);
-                      height: 169.753px;
-                    "
-                  ></div>
-                </div>
+                ></div>
                 <span
                   class="swiper-notification"
                   aria-live="assertive"
@@ -7338,12 +7038,41 @@ As a great conspiracy begins to unfold, the line between good and evil blurs. Wh
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".swiper-container", {
-        direction: "vertical",
-        mousewheel: true,
+      $(function () {
+        const audio = document.getElementById("main-theme");
+
+        let swiper = new Swiper(".index__swiper", {
+          direction: "vertical",
+          mousewheel: true,
+          speed: 1000,
+          autoHeight: true,
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            draggable: true,
+          },
+          navigation: {
+            nextEl: ".kv__next",
+          },
+        });
+
+        $(".music-control").on("click", function () {
+          if (audio.paused) {
+            audio.play();
+            $(this)
+              .removeClass("music-control--off")
+              .addClass("music-control--on");
+          } else {
+            audio.pause();
+            $(this)
+              .removeClass("music-control--on")
+              .addClass("music-control--off");
+          }
+        });
       });
     </script>
+    <script></script>
   </body>
 </html>
