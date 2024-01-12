@@ -742,16 +742,16 @@ body {
 .index__swiper .swiper-scrollbar[data-v-6dd5e992] {
   position: fixed;
 }
-.index__swiper .swiper-footer[data-v-6dd5e992] {
+/* .index__swiper .swiper-footer[data-v-6dd5e992] {
   min-height: 282px;
   background-color: #000;
-}
+} */
 
 .v--modal-overlay {
   background: rgba(0, 0, 0, 0.7) !important;
 }
 
-.footer[data-v-19a50ce1] {
+/* .footer[data-v-19a50ce1] {
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -861,7 +861,7 @@ body {
   background: #f2f2f2;
   font-size: 26px;
   color: #333;
-}
+} */
 @-webkit-keyframes show_lang-data-v-19a50ce1 {
   from {
     opacity: 0;
@@ -2029,7 +2029,7 @@ button.swiper-pagination-bullet {
     transform: translate3d(10px, 0, 0);
   }
 }
-.mhy-bridge-message-box-mask {
+/* .mhy-bridge-message-box-mask {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -2100,7 +2100,7 @@ button.swiper-pagination-bullet {
 }
 .mhy-bridge-message-box-mask.message-box-close {
   opacity: 0;
-}
+} */
 
 @-webkit-keyframes messageBoxScaleIn {
   from {
@@ -3593,7 +3593,7 @@ ul[data-v-89fac28c] {
 * {
   font-family: "微软雅黑", "Microsoft YaHei", "Neuropolitical", sans-serif !important;
 }
-.hy-footer-skOevz {
+/* .hy-footer-skOevz {
   font-family: sans-serif;
   line-height: 1.2;
   text-align: center;
@@ -3623,7 +3623,7 @@ ul[data-v-89fac28c] {
 }
 .hy-footer-skOevz .link-34dgkH {
   color: #bbb;
-}
+} */
 @media (max-width: 1023px) {
   .pc-only-1shmba {
     display: none !important;
@@ -3645,7 +3645,7 @@ ul[data-v-89fac28c] {
   -o-user-drag: none;
   user-drag: none;
 }
-.hy-footer-skOevz {
+/* .hy-footer-skOevz {
   position: relative;
   background: #000;
   color: #fff;
@@ -3659,7 +3659,7 @@ ul[data-v-89fac28c] {
   .hy-footer-skOevz {
     padding: 30px 0 40px;
   }
-}
+} */
 .main-1qj96a {
   width: 100%;
   overflow: hidden;
