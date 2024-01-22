@@ -57,7 +57,7 @@ body {
 .music-control .music-control__rect {
   width: 3px;
   float: left;
-  background: #acbaff;
+  background: #F4C19E;
 }
 .music-control .music-control__rect + .music-control__rect {
   margin-left: 3px;
@@ -2805,7 +2805,7 @@ ul[data-character-section] {
   height: 100%;
   background-size: cover;
   background-position: left top;
-  background-image: url("https://tot.hoyoverse.com/_nuxt/img/82d4778.png");
+  background-image: url(./assets/bg.jpg);
 }
 .character__title[data-character-section] {
   position: absolute;
@@ -2933,7 +2933,7 @@ ul[data-character-section] {
   right: 100%;
   width: 200%;
   height: 100%;
-  background: #768dd4;
+  background: #F4C19E;
   z-index: 6;
   opacity: 1;
 }
@@ -2955,7 +2955,7 @@ ul[data-character-section] {
   display: block;
   width: 6px;
   height: 28px;
-  background: #768dd4;
+  background: #F4C19E;
   flex-shrink: 0;
 }
 .character .character__cv .cv__langs label[data-character-section] {
@@ -3039,7 +3039,7 @@ ul[data-character-section] {
   left: 0;
   width: 34px;
   height: 34px;
-  background: #768dd4;
+  background: #F4C19E;
   border-radius: 50%;
   z-index: 2;
   margin: 0;
